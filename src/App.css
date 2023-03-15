@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 .App {
-  background-color: #f6f6f6;
+  background-color: #fff;
   color: #0d1d2c;
   display: flex;
   flex-direction: column;
@@ -10,4 +10,22 @@
   width: 100%;
   padding-top: 30px;
   font-family: Montserrat;
+}
+
+.topSection {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topSection button {
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
 }
