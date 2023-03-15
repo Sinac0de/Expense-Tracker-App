@@ -1,5 +1,5 @@
 import { useState } from "react";
-import TransactionsCompoenent from "./TransactionsComponent";
+import TransactionsComponent from "./TransactionsComponent";
 import OverviewComponent from "./OverviewComponent";
 
 const ExpenseApp = () => {
@@ -10,7 +10,7 @@ const ExpenseApp = () => {
   return (
     <section>
       <OverviewComponent income={income} expense={expense} />
-      <TransactionsCompoenent transactions={transactions} />
+      <TransactionsComponent transactions={transactions} />
     </section>
   );
 };
