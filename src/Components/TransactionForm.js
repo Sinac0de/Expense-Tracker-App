@@ -1,8 +1,7 @@
 import { useState } from "react";
-const TransactionForm = ({ addTransaction }) => {
+const TransactionForm = ({ addTransaction, setIsShow }) => {
   const [formValues, setFormValues] = useState({
     type: "expense",
-    amount: 0,
     desc: "",
   });
 
@@ -12,7 +11,12 @@ const TransactionForm = ({ addTransaction }) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    addTransaction(formValues);
+    if (formValues.desc && formValues.amount) {
+      addTransaction(formValues);
+      setIsShow(false);
+    } else {
+      alert("Please check the inputs and try again!");
+    }
   };
 
   return (

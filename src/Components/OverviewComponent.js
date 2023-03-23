@@ -15,7 +15,12 @@ const OverviewComponent = ({ income, expense, addTransaction }) => {
           {isShow ? "CANCEL" : "ADD"}
         </button>
       </div>
-      {isShow && <TransactionForm addTransaction={addTransaction} />}
+      {isShow && (
+        <TransactionForm
+          addTransaction={addTransaction}
+          setIsShow={setIsShow}
+        />
+      )}
       <div className="resultSection">
         <div className="expenseBox">
           <p>Expense</p>
