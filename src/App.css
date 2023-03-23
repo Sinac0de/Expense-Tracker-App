@@ -93,3 +93,14 @@ input {
 .sectionHeader {
   margin-bottom: 0.5em;
 }
+
+.transaction {
+  display: flex;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 5px solid red;
+  margin: 0.5em 0;
+}
