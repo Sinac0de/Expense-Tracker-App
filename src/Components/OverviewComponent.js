@@ -14,8 +14,14 @@ const OverviewComponent = ({ income, expense, addTransaction }) => {
       </div>
       {isShow && <TransactionForm addTransaction={addTransaction} />}
       <div className="resultSection">
-        <div>Expense {expense}</div>
-        <div>Income {income}</div>
+        <div className="expenseBox">
+          <p>Expense</p>
+          <h3 id="expense"> ${expense} </h3>
+        </div>
+        <div className="expenseBox">
+          <p>Income</p>
+          <h3 id="income"> ${income} </h3>
+        </div>
       </div>
     </>
   );
