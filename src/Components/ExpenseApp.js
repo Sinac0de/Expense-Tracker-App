@@ -7,9 +7,18 @@ const ExpenseApp = () => {
   const [income, setIncome] = useState(0);
   const [transactions, setTransactions] = useState([]);
 
+  const addTransaction = (formValues) => {
+    const data = { ...formValues, id: Date.now() };
+    setTransactions([...transactions, data]);
+  };
+
   return (
     <section>
-      <OverviewComponent income={income} expense={expense} />
+      <OverviewComponent
+        income={income}
+        expense={expense}
+        addTransaction={addTransaction}
+      />
       <TransactionsComponent transactions={transactions} />
     </section>
   );
