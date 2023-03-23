@@ -8,8 +8,11 @@
   align-items: center;
   height: 100vh;
   width: 100%;
-  padding-top: 30px;
   font-family: Montserrat;
+}
+
+header {
+  margin: 1em 0;
 }
 
 .topSection {
@@ -19,7 +22,7 @@
   align-items: center;
 }
 
-.topSection button {
+button {
   border: none;
   outline: none;
   background-color: black;
@@ -28,4 +31,17 @@
   border-radius: 0.5rem;
   cursor: pointer;
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+.transactionForm {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.radioContainer {
+  display: flex;
+  gap: 1em;
 }
