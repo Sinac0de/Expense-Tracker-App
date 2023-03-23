@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TransactionsComponent from "./TransactionsComponent";
 import OverviewComponent from "./OverviewComponent";
 
@@ -11,6 +11,18 @@ const ExpenseApp = () => {
     const data = { ...formValues, id: Date.now() };
     setTransactions([...transactions, data]);
   };
+
+  useEffect(() => {
+    let exp = 0;
+    let inc = 0;
+    transactions.forEach((t) => {
+      t.type === "expense"
+        ? (exp += parseFloat(t.amount))
+        : (inc += parseFloat(t.amount));
+    });
+    setExpense(exp);
+    setIncome(inc);
+  }, [transactions]);
 
   return (
     <section>
