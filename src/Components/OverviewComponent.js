@@ -7,9 +7,9 @@ const OverviewComponent = ({ income, expense, addTransaction }) => {
   return (
     <>
       <div className="topSection">
-        <h3>Balance : {income - expense} </h3>
+        <h3>Balance : ${income - expense} </h3>
         <button
-          className={isShow && "cancelBtn"}
+          className={isShow ? "cancelBtn" : null}
           onClick={() => setIsShow((prevState) => !prevState)}
         >
           {isShow ? "CANCEL" : "ADD"}
