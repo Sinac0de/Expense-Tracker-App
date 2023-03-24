@@ -94,6 +94,22 @@ input {
   margin-bottom: 0.5em;
 }
 
+.searchInput {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 0.6em 1em;
+  background-color: #efefef;
+}
+
+.searchNotFound {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+}
+
 .transaction {
   display: flex;
   padding: 0.5em 1em;
