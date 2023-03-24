@@ -31,9 +31,7 @@ const ExpenseApp = () => {
         expense={expense}
         addTransaction={addTransaction}
       />
-      {transactions.length && (
-        <TransactionsComponent transactions={transactions} />
-      )}
+      <TransactionsComponent transactions={transactions} />
     </section>
   );
 };
