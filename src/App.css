@@ -11,13 +11,18 @@
   font-family: Montserrat;
 }
 
+.container {
+  width: 100%;
+  padding: 1.5em;
+  max-width: 400px;
+}
+
 header {
   margin: 2em 0;
 }
 
 .topSection {
   display: flex;
-  width: 400px;
   justify-content: space-between;
   align-items: center;
 }
@@ -119,4 +124,15 @@ input {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-right: 5px solid red;
   margin: 0.5em 0;
+}
+
+@media screen and (max-width: 480px) {
+  .topSection {
+    width: 100%;
+  }
+
+  .resultSection {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

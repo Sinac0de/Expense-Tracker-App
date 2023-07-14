@@ -25,7 +25,7 @@ const ExpenseApp = () => {
   }, [transactions]);
 
   return (
-    <section>
+    <section className="container">
       <OverviewComponent
         income={income}
         expense={expense}
